@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test tạo bảng</title>
+    <style>
+        table {
+            width:100%;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 5px;
+            text-align: left;
+        }
+        tr:nth-child(even) {
+            background-color: #eee;
+        }
+        tr:nth-child(odd) {
+            background-color:#fff;
+        }
+        th {
+            background-color: cornflowerblue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<table style="width:100%">
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+    </tr>
+    <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+    </tr>
+</table>
+<p>
+<table border="1" cellpadding="2" cellspacing="5">
+    <tr>
+        <th>Name</th>
+        <th>Telephone</th>
+    </tr>
+    <tr>
+        <td>Bill Gates</td>
+        <td>55577854</td>
+    </tr>
+</table>
+</p>
+</body>
+</html>
