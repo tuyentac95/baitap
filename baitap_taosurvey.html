@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tao survey</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            padding: 5px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <hr>
+    <h2>Market Research Survey</h2>
+    <p>Please take a few moments to complete this satisfication survey</p>
+    <hr>
+    <p>What is your age range?<br>
+    <select name="age">
+        <option value="1824" style="background-color: #e0e0e0">18-24 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</option>
+        <option value="2530">25-30</option>
+        <option value="3140">31-40</option>
+    </select>
+    </p>
+    <p>What is your yearly income range?<br>
+    <select name="income">
+        <option value="25000" style="background-color: #e0e0e0">$0-$25,000 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</option>
+        <option value="50000">$25,000-$50,000</option>
+        <option value="100000">$50,000-$100,000</option>
+    </select>
+    </p>
+    <p>Gender<br>
+    <label><input type="radio" name="gender"/>Male</label><br>
+    <label><input type="radio" name="gender"/>Female</label>
+    </p>
+    <p>Which of the follwing products have your purchased in the last 2 months. Please check all that apply.<br>
+    <label><input type="checkbox" name="purhased"/>Product 1</label><br>
+    <label><input type="checkbox" name="purhased"/>Product 2</label><br>
+    <label><input type="checkbox" name="purhased"/>Product 3</label>
+    </p>
+    <p>How often would you use our new product?<br>
+        <label><input type="radio" name="timely"/>Daily</label><br>
+        <label><input type="radio" name="timely"/>Weekly</label><br>
+        <label><input type="radio" name="timely"/>Monthly</label>
+    </p>
+    <p>What would you pay for the new product?<br>
+    $ <input type="number" name="dollars"/>&nbsp; .&nbsp; <input type="number" name="cents"><br>
+        &nbsp; &nbsp;<label>Dollars</label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <label>Cents</label>
+    </p>
+    <p>What features would like to see in the new product.<br>
+    <textarea cols="50" rows="4"></textarea>
+    <p>Please rate your level of agreement with the following statements.<br>
+        <table>
+            <tr style="align-content: center;background-color: darkgrey">
+                <th>&nbsp;</th>
+                <th>Strongly Disagree</th>
+                <th>Disagree</th>
+                <th>Agree</th>
+            </tr>
+            <tr>
+                <td>Our products are priced fairy.</td>
+                <td style="text-align: center"><label><input type="radio" name="pricerate"/><br>1</label></td>
+                <td style="text-align: center"><label><input type="radio" name="pricerate"/><br>2</label></td>
+                <td style="text-align: center"><label ><input type="radio" name="pricerate"/><br>3</label></td>
+            </tr>
+            <tr style="background-color: #eeeeee">
+                <td>Our products are highly quality.</td>
+                <td style="text-align: center"><label><input type="radio" name="qualityrate"/><br>1</label></td>
+                <td style="text-align: center"><label><input type="radio" name="qualityrate"/><br>2</label></td>
+                <td style="text-align: center"><label><input type="radio" name="qualityrate"/><br>3</label></td>
+            </tr>
+            <tr>
+                <td>You would recommend our product to a friend or coworker.</td>
+                <td style="text-align: center"><label><input type="radio" name="recommend"/><br>1</label></td>
+                <td style="text-align: center"><label><input type="radio" name="recommend"/><br>2</label></td>
+                <td style="text-align: center"><label><input type="radio" name="recommend"/><br>3</label></td>
+            </tr>
+    </table>
+    <p><input type="submit" name="submit" value="Submit"/>
+    </p>
+    </p>
+</body>
+</html>
