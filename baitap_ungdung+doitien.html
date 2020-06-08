@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng đổi tiền</title>
+    <style>
+        table {
+            padding: 5px;
+            width: 40%;
+        }
+    </style>
+</head>
+<body>
+    <form name="frm">
+    <table>
+        <tr>
+            <th>Amount</th>
+            <th>From Currency</th>
+            <th>To Currency</th>
+            <th>&nbsp;</th>
+        </tr>
+        <tr  style="text-align: center">
+            <td><input type="number" name="amount" id="amount"/></td>
+            <td>
+                <select name="fr" id="fr">
+                    <option value="VND">VND</option>
+                    <option value="USD">USD</option>
+                </select>
+            </td>
+            <td>
+                <select name="to" id="to">
+                    <option value="VND">VND</option>
+                    <option value="USD">USD</option>
+                </select>
+            </td>
+            <td>
+                <button type="button" onclick="doitien();">Convert</button>
+            </td>
+        </tr>
+    </table>
+    </form>
+    <p>Result: <span id="result"></span></p>
+        <script>
+            function doitien() {
+                let amt = document.getElementById("amount").value;
+                let fr = document.getElementById("fr").value;
+                let to = document.getElementById("to").value;
+                if (fr === to) {
+                    document.getElementById("result").innerHTML = amt;
+                } else {
+                    if (fr === "USD") {
+                        document.getElementById("result").innerHTML = amt*23000;
+                    } else {
+                        document.getElementById("result").innerHTML = amt/23000;
+                    }
+                }
+            }
+        </script>
+    </p>
+</body>
+</html>
