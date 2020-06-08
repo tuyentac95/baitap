@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Biến, kiểu dư liệu và toán từ</title>
+</head>
+<body>
+    <p>Bài 1: Tính điểm trung bình và tổng điểm</p>
+        <script>
+            let inputvl;
+            let inputhh;
+            let inputsh;
+                inputvl = prompt("Nhập điểm môn Vật lý:");
+                inputhh = prompt("Nhập điểm môn Hóa học:");
+                inputsh = prompt("Nhập điểm môn Sinh học:");
+            let vl = parseInt(inputvl);
+            let hh = parseInt(inputhh);
+            let sh = parseInt(inputsh);
+            let dtb=(vl + hh + sh)/3;
+                document.write('Điểm trung bình là: '+dtb);
+                document.write('<br>');
+            let tong=(vl + hh + sh);
+                document.write('Tổng điểm là: '+tong);
+        </script>
+    </p>
+</body>
+</html>
